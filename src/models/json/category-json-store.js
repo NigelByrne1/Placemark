@@ -3,12 +3,12 @@ import { db } from "./store-utils.js";
 import { placemarkJsonStore } from "./placemark-json-store.js";
 
 export const categoryJsonStore = {
-  async getAllcategorys() {
+  async getAllCategorys() {
     await db.read();
     return db.data.categorys;
   },
 
-  async addcategory(category) {
+  async addCategory(category) {
     await db.read();
     category._id = v4();
     db.data.categorys.push(category);
@@ -16,26 +16,26 @@ export const categoryJsonStore = {
     return category;
   },
 
-  async getcategoryById(id) {
+  async getCategoryById(id) {
     await db.read();
     const list = db.data.categorys.find((category) => category._id === id);
     list.placemarks = await placemarkJsonStore.getplacemarksBycategoryId(list._id);
     return list;
   },
 
-  async getUsercategorys(userid) {
+  async getUserCategorys(userid) {
     await db.read();
     return db.data.categorys.filter((category) => category.userid === userid);
   },
 
-  async deletecategoryById(id) {
+  async deleteCategoryById(id) {
     await db.read();
     const index = db.data.categorys.findIndex((category) => category._id === id);
     db.data.categorys.splice(index, 1);
     await db.write();
   },
 
-  async deleteAllcategorys() {
+  async deleteAllCategorys() {
     db.data.categorys = [];
     await db.write();
   },

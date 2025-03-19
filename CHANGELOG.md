@@ -8,4 +8,4 @@
 - mem store works
 - json store works
 
-
+## version 0.2.0

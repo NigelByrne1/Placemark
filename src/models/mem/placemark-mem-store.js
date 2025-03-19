@@ -3,39 +3,39 @@ import { v4 } from "uuid";
 let placemarks = [];
 
 export const placemarkMemStore = {
-  async getAllplacemarks() {
+  async getAllPlacemarks() {
     return placemarks;
   },
 
-  async addplacemark(categoryId, placemark) {
+  async addPlacemark(categoryId, placemark) {
     placemark._id = v4();
     placemark.categoryid = categoryId;
     placemarks.push(placemark);
     return placemark;
   },
 
-  async getplacemarksBycategoryId(id) {
+  async getplacemarksByCategoryId(id) {
     return placemarks.filter((placemark) => placemark.categoryid === id);
   },
 
-  async getplacemarkById(id) {
+  async getPlacemarkById(id) {
     return placemarks.find((placemark) => placemark._id === id);
   },
 
-  async getcategoryplacemarks(categoryId) {
+  async getcategoryPlacemarks(categoryId) {
     return placemarks.filter((placemark) => placemark.categoryid === categoryId);
   },
 
-  async deleteplacemark(id) {
+  async deletePlacemark(id) {
     const index = placemarks.findIndex((placemark) => placemark._id === id);
     placemarks.splice(index, 1);
   },
 
-  async deleteAllplacemarks() {
+  async deleteAllPlacemarks() {
     placemarks = [];
   },
 
-  async updateplacemark(placemark, updatedplacemark) {
+  async updatePlacemark(placemark, updatedplacemark) {
     placemark.name = updatedplacemark.name;
     placemark.description = updatedplacemark.description;
     placemark.latitude = updatedplacemark.latitude;
