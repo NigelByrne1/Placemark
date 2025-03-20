@@ -1,4 +1,11 @@
 {
   "users": [],
-  "categorys": []
+  "categorys": [
+    {
+      "userid": "1f140c8c-af67-427d-a2b2-64691d737ebf",
+      "title": "cliffs",
+      "_id": "6536427f-850f-4fb3-9ad8-796b4d21f0a1"
+    }
+  ],
+  "placemarks": []
 }

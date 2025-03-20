@@ -14,7 +14,7 @@ export const placemarkMemStore = {
     return placemark;
   },
 
-  async getplacemarksByCategoryId(id) {
+  async getPlacemarksByCategoryId(id) {
     return placemarks.filter((placemark) => placemark.categoryid === id);
   },
 
@@ -22,7 +22,7 @@ export const placemarkMemStore = {
     return placemarks.find((placemark) => placemark._id === id);
   },
 
-  async getcategoryPlacemarks(categoryId) {
+  async getCategoryPlacemarks(categoryId) {
     return placemarks.filter((placemark) => placemark.categoryid === categoryId);
   },
 

@@ -16,7 +16,7 @@ export const categoryMemStore = {
 
   async getCategoryById(id) {
     const list = categorys.find((category) => category._id === id);
-    list.placemarks = await placemarkMemStore.getplacemarksBycategoryId(list._id);
+    list.placemarks = await placemarkMemStore.getPlacemarksByCategoryId(list._id);
     return list;
   },
 

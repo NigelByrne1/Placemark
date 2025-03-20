@@ -16,6 +16,7 @@ export const placemarkJsonStore = {
     return placemark;
   },
 
+
   async getPlacemarksByCategoryId(id) {
     await db.read();
     return db.data.placemarks.filter((placemark) => placemark.categoryid === id);

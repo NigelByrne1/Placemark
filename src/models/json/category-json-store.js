@@ -19,7 +19,7 @@ export const categoryJsonStore = {
   async getCategoryById(id) {
     await db.read();
     const list = db.data.categorys.find((category) => category._id === id);
-    list.placemarks = await placemarkJsonStore.getplacemarksBycategoryId(list._id);
+    list.placemarks = await placemarkJsonStore.getPlacemarksByCategoryId(list._id);
     return list;
   },
 
