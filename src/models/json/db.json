@@ -1,40 +1,4 @@
 {
-  "users": [
-    {
-      "firstName": "Nigel",
-      "lastName": "Byrne",
-      "email": "nigelbyrne100@gmail.com",
-      "password": "nigel",
-      "_id": "2418f961-fbd3-48b7-95d6-52acd407d4f6"
-    }
-  ],
-  "categorys": [
-    {
-      "userid": "2418f961-fbd3-48b7-95d6-52acd407d4f6",
-      "title": "Walks",
-      "_id": "9d3534cb-6641-437b-ac22-becba22306e8"
-    },
-    {
-      "userid": "2418f961-fbd3-48b7-95d6-52acd407d4f6",
-      "title": "hi",
-      "_id": "c90e97cd-215c-44b3-b76f-63366147274d"
-    }
-  ],
-  "placemarks": [
-    {
-      "title": "12",
-      "artist": "hi",
-      "duration": 234,
-      "_id": "8a0ad607-d1d8-4a81-9c0d-54ac140fa342",
-      "categoryid": "138f3e5c-1206-4016-ba86-016059fb28e0"
-    },
-    {
-      "name": "css",
-      "description": "aax",
-      "latitude": 122,
-      "longitude": 121,
-      "_id": "8bbce2ec-b3a5-45fb-acd2-384607da612c",
-      "categoryid": "9d3534cb-6641-437b-ac22-becba22306e8"
-    }
-  ]
+  "users": [],
+  "categorys": []
 }
