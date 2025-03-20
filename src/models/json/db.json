@@ -1,5 +1,27 @@
 {
-  "users": [],
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Jackson",
+      "email": "john@jackson.com",
+      "password": "password",
+      "_id": "3ea63d73-a1b4-4a55-8176-bb731e46d1f5"
+    },
+    {
+      "firstName": "Jack",
+      "lastName": "Johnson",
+      "email": "jack@johnson.com",
+      "password": "password",
+      "_id": "7de19516-0676-4de7-9a6f-7893b7585267"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "email": "michael@johnson.com",
+      "password": "password",
+      "_id": "794ff9df-48d8-4e5b-bcd8-85f338ec94a0"
+    }
+  ],
   "categorys": [
     {
       "userid": "1f140c8c-af67-427d-a2b2-64691d737ebf",
