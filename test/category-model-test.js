@@ -1,8 +1,11 @@
 import { assert } from "chai";
+import { EventEmitter } from "events";
 import { db } from "../src/models/db.js";
 import { testCategorys, trail } from "./fixtures.js";
 import { assertSubset } from "./test-utils.js";
 
+
+EventEmitter.setMaxListeners(25);
 
 suite("Category Model tests", () => {
 
@@ -32,7 +35,7 @@ suite("Category Model tests", () => {
   test("get a category - success", async () => {
     const category = await db.categoryStore.addCategory(trail);
     const returnedCategory = await db.categoryStore.getCategoryById(category._id);
-    assert.equal(trail, category);
+    assertSubset(trail, category);
   });
 
   test("delete One Playist - success", async () => {

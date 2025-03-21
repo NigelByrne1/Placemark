@@ -9,3 +9,6 @@
 - json store works
 
 ## version 0.2.0
+
+- MongoDB inplemented
+- Core Unit Tests Implemented 
