@@ -31,6 +31,17 @@ export const trail = {
     title: "Famous Trails"
   };
 
+export const careys = {
+    "name": "Careys Castle Clonmel",
+    "description": "A lovley castle just outside the town lovely forest",
+    "latitude": 150,
+    "longitude": 150
+};
+
+export const castle = {
+  title: "Famous Castles"
+};
+
 export const testCategorys = [
   {
     title: "Castles"
@@ -42,3 +53,24 @@ export const testCategorys = [
     title: "Nature Walks"
   }
 ];
+
+export const testPlacemarks = [
+  {
+    "title": "Main Guard Clonmel",
+    "description": "Lovely sight to see",
+    "latitude": 150,
+    "longitude": 180
+  },
+  {
+    "title": "Sulivans Kilsheelan",
+    "description": "Smashing pub in kilsheelan",
+    "latitude": 110,
+    "longitude": 170
+  },
+  {
+    "title": "Holy Cross Clonmel",
+    "description": "Cross up high looking over the town",
+    "latitude": 450,
+    "longitude": 865
+  },
+]
