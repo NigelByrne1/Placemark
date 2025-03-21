@@ -22,6 +22,19 @@
       "_id": "cfbbcfba-a8df-4c85-9a13-1ed562d567d4"
     }
   ],
-  "categorys": [],
+  "categorys": [
+    {
+      "title": "Castles",
+      "_id": "b5bc16de-f152-4c8f-a62a-096463a1d0f0"
+    },
+    {
+      "title": "Markets",
+      "_id": "adaa16d7-76ea-4d84-bdc8-e69d827f97e6"
+    },
+    {
+      "title": "Nature Walks",
+      "_id": "7f6e97ef-bbf7-4579-9bc7-3ef0506e9100"
+    }
+  ],
   "placemarks": []
 }

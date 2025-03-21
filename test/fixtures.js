@@ -1,8 +1,8 @@
 export const michael = {
     firstName: "Michael",
     lastName: "Jackson",
-        email: "michael@jackson.ie",
-        password: "password",
+    email: "michael@jackson.ie",
+    password: "password",
   };
 
 
@@ -26,3 +26,19 @@ export const testUsers = [
       password: "password",
     },
   ];
+
+export const trail = {
+    title: "Famous Trails"
+  };
+
+export const testCategorys = [
+  {
+    title: "Castles"
+  },
+  {
+    title: "Markets"
+  },
+  {
+    title: "Nature Walks"
+  }
+];

@@ -18,8 +18,12 @@ export const categoryJsonStore = {
 
   async getCategoryById(id) {
     await db.read();
-    const list = db.data.categorys.find((category) => category._id === id);
-    list.placemarks = await placemarkJsonStore.getPlacemarksByCategoryId(list._id);
+    let list = db.data.categorys.find((category) => category._id === id);
+    if (list) {
+      list.placemark = await placemarkJsonStore.getPlacemarksByCategoryId(list._id);
+    } else {
+      list = null;
+    }
     return list;
   },
 
@@ -31,7 +35,7 @@ export const categoryJsonStore = {
   async deleteCategoryById(id) {
     await db.read();
     const index = db.data.categorys.findIndex((category) => category._id === id);
-    db.data.categorys.splice(index, 1);
+    if (index !== -1) db.data.categorys.splice(index, 1);
     await db.write();
   },
 
