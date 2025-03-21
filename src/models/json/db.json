@@ -5,29 +5,23 @@
       "lastName": "Jackson",
       "email": "john@jackson.com",
       "password": "password",
-      "_id": "3ea63d73-a1b4-4a55-8176-bb731e46d1f5"
+      "_id": "a7c95a78-d1ae-48d5-8b7c-1db26548cbdd"
     },
     {
       "firstName": "Jack",
       "lastName": "Johnson",
       "email": "jack@johnson.com",
       "password": "password",
-      "_id": "7de19516-0676-4de7-9a6f-7893b7585267"
+      "_id": "e8f00913-745a-4e3b-b046-8650597c2e17"
     },
     {
       "firstName": "Michael",
       "lastName": "Johnson",
       "email": "michael@johnson.com",
       "password": "password",
-      "_id": "794ff9df-48d8-4e5b-bcd8-85f338ec94a0"
+      "_id": "cfbbcfba-a8df-4c85-9a13-1ed562d567d4"
     }
   ],
-  "categorys": [
-    {
-      "userid": "1f140c8c-af67-427d-a2b2-64691d737ebf",
-      "title": "cliffs",
-      "_id": "6536427f-850f-4fb3-9ad8-796b4d21f0a1"
-    }
-  ],
+  "categorys": [],
   "placemarks": []
 }
