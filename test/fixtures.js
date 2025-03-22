@@ -1,3 +1,5 @@
+export const serviceUrl = "http://localhost:3000";
+
 export const michael = {
     firstName: "Michael",
     lastName: "Jackson",
@@ -74,3 +76,5 @@ export const testPlacemarks = [
     "longitude": 865
   },
 ]
+
+
