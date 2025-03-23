@@ -19,8 +19,8 @@ suite("Placemark API tests", () => {
   teardown(async () => {});
 
   test("create placemark", async () => {
-    const returnedPlacemark = await placemarkService.createPlacemark(beachClub._id, concerto);
-    assertSubset(concerto, returnedPlacemark);
+    const returnedPlacemark = await placemarkService.createPlacemark(beachClub._id, careys);
+    assertSubset(careys, returnedPlacemark);
   });
 
   test("create Multiple placemarks", async () => {
