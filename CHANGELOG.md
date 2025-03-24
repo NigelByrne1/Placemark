@@ -17,3 +17,7 @@
 
 - Api for user, categorys and placemarks
 - TDD test all implemented for API
+
+## version 0.4.0
+
+- Cloud atlast supported
