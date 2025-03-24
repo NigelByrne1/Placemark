@@ -15,4 +15,5 @@
 
 ## version 0.3.0
 
-- 
+- Api for user, categorys and placemarks
+- TDD test all implemented for API
