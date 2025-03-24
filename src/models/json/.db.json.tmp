@@ -1,13 +1,5 @@
 {
-  "users": [
-    {
-      "firstName": "Michael",
-      "lastName": "Jackson",
-      "email": "michael@jackson.ie",
-      "password": "password",
-      "_id": "94da71ef-ece2-4b14-b698-e027d1005033"
-    }
-  ],
+  "users": [],
   "categorys": [],
   "placemarks": [
     {
