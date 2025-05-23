@@ -1,79 +1,91 @@
 export const serviceUrl = "http://localhost:3000";
 
 export const michael = {
-    firstName: "Michael",
-    lastName: "Jackson",
-    email: "michael@jackson.ie",
+    firstName: "Miechdddael",
+    lastName: "Jaeckson",
+    email: "micoohaeel@jackson.ie",
     password: "password",
   };
+
+ export const mary = {
+    firstName: "mary",
+    lastName: "hairy",
+    email: "hairymary@jackson.ie",
+    password: "pasesword",
+  }; 
+
+export const michaelCredentials = {
+      email: "micoohaeel@jackson.ie",
+      password: "password",
+    };
 
 
 export const testUsers = [
     {
-      firstName: "John",
-      lastName: "Jackson",
-      email: "john@jackson.com",
+      firstName: "Johddn",
+      lastName: "Jackddson",
+      email: "johen@jackson.com",
+      password: "pasesword",
+    },
+    {
+      firstName: "Jaddck",
+      lastName: "Johnddson",
+      email: "jacke@johnson.com",
       password: "password",
     },
     {
-      firstName: "Jack",
-      lastName: "Johnson",
-      email: "jack@johnson.com",
-      password: "password",
-    },
-    {
-      firstName: "Michael",
-      lastName: "Johnson",
-      email: "michael@johnson.com",
+      firstName: "Micddhael",
+      lastName: "Johnddson",
+      email: "michaeel@johnson.com",
       password: "password",
     },
   ];
 
 export const trail = {
-    title: "Famous Trails"
+    title: "Famoues Trails"
   };
 
 export const careys = {
-    "name": "Careys Castle Clonmel",
-    "description": "A lovley castle just outside the town lovely forest",
-    "latitude": 150,
-    "longitude": 150
+    name: "Careys Cadstle Clonmel",
+    description: "A lovley castle just outside the town lovely forest",
+    latitude: 20,
+    longitude: 25
 };
 
 export const castle = {
-  title: "Famous Castles"
+  title: "Famous Castdles"
 };
 
 export const testCategorys = [
   {
-    title: "Castles"
+    title: "Castdles"
   },
   {
-    title: "Markets"
+    title: "Mardkets"
   },
   {
-    title: "Nature Walks"
+    title: "Natured Walks"
   }
 ];
 
 export const testPlacemarks = [
   {
-    "title": "Main Guard Clonmel",
-    "description": "Lovely sight to see",
-    "latitude": 150,
-    "longitude": 180
+    name: "Main Guard dClonmel",
+    description: "Lovely sight to see",
+    latitude: 52,
+    longitude: 10
   },
   {
-    "title": "Sulivans Kilsheelan",
-    "description": "Smashing pub in kilsheelan",
-    "latitude": 110,
-    "longitude": 170
+    name: "Sulivans Kilsdheelan",
+    description: "Smashing pub in kilsheelan",
+    latitude: 52,
+    longitude: 12
   },
   {
-    "title": "Holy Cross Clonmel",
-    "description": "Cross up high looking over the town",
-    "latitude": 450,
-    "longitude": 865
+    name: "Holy Cross Cdlonmel",
+    description: "Cross up high looking over the town",
+    latitude: 80,
+    longitude: 20
   },
 ]
 

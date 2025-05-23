@@ -2,8 +2,7 @@ import { EventEmitter } from "events";
 import { assert } from "chai";
 import { placemarkService } from "./placemark-service.js";
 import { assertSubset } from "../test-utils.js";
-
-import { michael, trail, testCategorys } from "../fixtures.js";
+import { michael, michaelCredentials, trail, testCategorys } from "../fixtures.js";
 
 EventEmitter.setMaxListeners(25);
 
@@ -11,9 +10,13 @@ suite("Category API tests", () => {
   let user = null;
 
   setup(async () => {
+    placemarkService.clearAuth();
+    user = await placemarkService.createUser(michael);
+    await placemarkService.authenticate(michaelCredentials);
     await placemarkService.deleteAllCategorys();
     await placemarkService.deleteAllUsers();
     user = await placemarkService.createUser(michael);
+    await placemarkService.authenticate(michaelCredentials);
     trail.userid = user._id;
   });
 
@@ -39,10 +42,14 @@ suite("Category API tests", () => {
 
   test("create multiple categorys", async () => {
     for (let i = 0; i < testCategorys.length; i += 1) {
-      testCategorys[i].userid = user._id;
+      const category = {
+        title: testCategorys[i].title,
+        userid: user._id,
+      };
       // eslint-disable-next-line no-await-in-loop
-      await placemarkService.createCategory(testCategorys[i]);
+      await placemarkService.createCategory(category);
     }
+
     let returnedLists = await placemarkService.getAllCategorys();
     assert.equal(returnedLists.length, testCategorys.length);
     await placemarkService.deleteAllCategorys();
