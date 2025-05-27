@@ -15,6 +15,7 @@ import { accountsController } from "./controllers/accounts-controller.js";
 import { validate } from "./api/jwt-utils.js";
 import { apiRoutes } from "./api-routes.js";
 
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -39,10 +40,17 @@ const swaggerOptions = {
   security: [{ jwt: [] }],
 };
 
+
+
 async function init() {
-  const server = Hapi.server({
-    port: process.env.PORT || 3000,
-  });
+ const server = Hapi.server({
+  port: process.env.PORT || 3000,
+  host: "localhost", 
+  routes: {
+    cors: true
+  }
+});
+
 
   await server.register(Cookie);
   await server.register(jwt);
